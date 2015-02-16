@@ -11,7 +11,8 @@ Scss Guidelines
 * Separate each ruleset by a blank line.
 
 * All CSS rules should have a space after the selector & colon and a trailing semi-colon.
-Bad:
+
+Nope:
 ```css
   .block
   {
@@ -19,14 +20,14 @@ Bad:
   }
 ```
 
-Bad:
+Nope:
 ```css
   .block{
     color:red;
   }
 ```
 
-Good:
+Yup:
 ```css
   .block {
     color: red;
@@ -36,50 +37,55 @@ Good:
 * Include a space after each comma in comma-separated property or function values.
 
 * Use of BEM selectors instead of camelCase OR other format.
-Bad:
+
+Nope:
 ```html
   .blockSearch
 ```
 
-Good:
+Yup:
 ```html
   .block--search
 ```
 
 * Don't use unit if value is 0.
-Bad:
+
+Nope:
 ```css
   width: 0px;
 ```
 
-Good:
+Yup:
 ```css
   width: 0;
 ```
 
 * Never display trailing zeros.
-Bad:
+
+Nope:
 ```css
 padding: 0.5em;
 ```
 
-Good:
+Yup:
 ```css
 padding: .5em;
 ```
 
 * Don't over qualify class or ID selectors. Leads to specificity issues further down the line.
-Bad:
+
+Nope:
 ```css
 div.block
 ```
 
-Good:
+Yup:
 ```css
 .block
 ```
 
 * Quote attribute values in selectors.
+
 ```css
 input[type="checkbox"]
 ```
@@ -89,13 +95,14 @@ input[type="checkbox"]
 * Don't use `!important` reactively. But it is okay to use `!important` on helper classes only. To add `!important` pre-emptively is fine, e.g. `.error { color:red!important }`, as you know you will always want this rule to take precedence.
 
 * Use single quotes '' for strings.
-Bad:
+
+Nope:
 ```css
   font-family: Helvetica Neue Light, Helvetica, Arial, sans-serif;
   background-image: url(/images/kittens.jpg);
 ```
 
-Good:
+Yup:
 ```css
   font-family: 'Helvetica Neue Light', 'Helvetica', 'Arial', sans-serif;
   background-image: url('/images/kittens.jpg');
@@ -105,13 +112,14 @@ Good:
 --------------
 
 * Use Scss syntax not sass.
-Bad:
+
+Nope:
 ```css
   .block
     color: red;
 ```
 
-Good:
+Yup:
 ```css
   .block {
     color: red;
@@ -119,7 +127,8 @@ Good:
 ```
 
 * Don't over nest selectors.
-Bad:
+
+Nope:
 ```css
   .menu {
     .menu__item {
@@ -131,7 +140,7 @@ Bad:
   }
 ```
 
-Good:
+Yup:
 ```css
   .menu {
     .menu__item {
@@ -144,14 +153,15 @@ Good:
 ```
 
 * Use variable names in a format.
-Bad:
+
+Nope:
 ```css
   $header-bg-color: red;
   $menu-link-color: green;
   $footer-link-color: blue;
 ```
 
-Good:
+Yup:
 ```css
   $color-header-bg: red;
   $color-link-color: green;
@@ -159,12 +169,13 @@ Good:
 ```
 
 * Top-level numeric calculations should always be wrapped in parentheses.
-Bad:
+
+Nope:
 ```css
   width: 100% / 3;
 ```
 
-Good:
+Yup:
 ```css
   width: (100% / 3);
 ```
