@@ -18,12 +18,12 @@ HTML Guidelines
 
 * PHP should be inline in HTML, not other way.
 
-Nope:
+**Nope:**
 ```php
 <?php print '<h2 class="node__title">' . $node->title . '</h2>'; ?>
 ```
 
-Yup:
+**Yup:**
 ```html
 <h2 class="node__title"><?php $node->title; ?></h2>
 ```

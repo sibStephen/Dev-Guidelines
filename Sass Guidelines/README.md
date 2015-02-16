@@ -12,7 +12,7 @@ Scss Guidelines
 
 * All CSS rules should have a space after the selector & colon and a trailing semi-colon.
 
-Nope:
+**Nope:**
 ```css
   .block
   {
@@ -20,14 +20,14 @@ Nope:
   }
 ```
 
-Nope:
+**Nope:**
 ```css
   .block{
     color:red;
   }
 ```
 
-Yup:
+**Yup:**
 ```css
   .block {
     color: red;
@@ -38,48 +38,48 @@ Yup:
 
 * Use of BEM selectors instead of camelCase OR other format.
 
-Nope:
+**Nope:**
 ```html
   .blockSearch
 ```
 
-Yup:
+**Yup:**
 ```html
   .block--search
 ```
 
 * Don't use unit if value is 0.
 
-Nope:
+**Nope:**
 ```css
   width: 0px;
 ```
 
-Yup:
+**Yup:**
 ```css
   width: 0;
 ```
 
 * Never display trailing zeros.
 
-Nope:
+**Nope:**
 ```css
 padding: 0.5em;
 ```
 
-Yup:
+**Yup:**
 ```css
 padding: .5em;
 ```
 
 * Don't over qualify class or ID selectors. Leads to specificity issues further down the line.
 
-Nope:
+**Nope:**
 ```css
 div.block
 ```
 
-Yup:
+**Yup:**
 ```css
 .block
 ```
@@ -96,13 +96,13 @@ input[type="checkbox"]
 
 * Use single quotes '' for strings.
 
-Nope:
+**Nope:**
 ```css
   font-family: Helvetica Neue Light, Helvetica, Arial, sans-serif;
   background-image: url(/images/kittens.jpg);
 ```
 
-Yup:
+**Yup:**
 ```css
   font-family: 'Helvetica Neue Light', 'Helvetica', 'Arial', sans-serif;
   background-image: url('/images/kittens.jpg');
@@ -113,13 +113,13 @@ Yup:
 
 * Use Scss syntax not sass.
 
-Nope:
+**Nope:**
 ```css
   .block
     color: red;
 ```
 
-Yup:
+**Yup:**
 ```css
   .block {
     color: red;
@@ -128,7 +128,7 @@ Yup:
 
 * Don't over nest selectors.
 
-Nope:
+**Nope:**
 ```css
   .menu {
     .menu__item {
@@ -140,7 +140,7 @@ Nope:
   }
 ```
 
-Yup:
+**Yup:**
 ```css
   .menu {
     .menu__item {
@@ -154,14 +154,14 @@ Yup:
 
 * Use variable names in a format.
 
-Nope:
+**Nope:**
 ```css
   $header-bg-color: red;
   $menu-link-color: green;
   $footer-link-color: blue;
 ```
 
-Yup:
+**Yup:**
 ```css
   $color-header-bg: red;
   $color-link-color: green;
@@ -170,12 +170,12 @@ Yup:
 
 * Top-level numeric calculations should always be wrapped in parentheses.
 
-Nope:
+**Nope:**
 ```css
   width: 100% / 3;
 ```
 
-Yup:
+**Yup:**
 ```css
   width: (100% / 3);
 ```

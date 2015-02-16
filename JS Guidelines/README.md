@@ -18,11 +18,11 @@ JS Guidelines
 
 * Always use `var` to declare variables. Not doing so will result in global variables.
 
-Nope:
+**Nope:**
 ```js
   x = 'Batman';
 ```
-Yup:
+**Yup:**
 ```js
   var x = 'Batman';
 ```
@@ -35,14 +35,14 @@ var $sidebar = $('.sidebar');
 
 * Use shorthands.
 
-Nope:
+**Nope:**
 ```js
 var selector = jQuery('.sidebar');
 var obj = new Object();
 var arr = new Array();
 ```
 
-Yup:
+**Yup:**
 ```js
 var selector = $('.sidebar');
 var obj = {};
@@ -68,7 +68,7 @@ var $search_form = $('#block-search').find('form');
 
 * Always use Drupal.behaviours in Drupal
 
-Nope:
+**Nope:**
 ```js
 (function($, Drupal) {
   $(document).ready(function() {
@@ -77,7 +77,7 @@ Nope:
 })(jQuery, Drupal);
 ```
 
-Yup:
+**Yup:**
 ```js
 (function($, Drupal) {
   Drupal.behaviour.behaviour_name = {
@@ -90,12 +90,12 @@ Yup:
 
 * Use dot notation when accessing properties.
 
-Nope:
+**Nope:**
 ```js
 Drupal.settings['base_url']
 ```
 
-Yup:
+**Yup:**
   ```js
 Drupal.settings.base_url
 ```
