@@ -23,6 +23,10 @@ Common Guidelines
 
 * If it makes sense, if it feels right, do it. Code is just a means, not an end.
 
+* Try to use the API as much as possible
+
+* If you have multiple code blocks doing some specific task, try to separate them with blank line and start each of them with a descriptive comment. It increases code readability
+
 
 **Common Practices**
 --------------------
