@@ -23,6 +23,32 @@ Common Guidelines
 
 * If it makes sense, if it feels right, do it. Code is just a means, not an end.
 
+* If you have multiple code blocks doing some specific task, try to separate them with blank line and start each of them with a descriptive comment. It increases code readability. For example,
+
+  ```php
+  // Code block 1.
+  // Initialize variables.
+  $sum_even = 0;
+  $sum_odd = 0;
+  
+  // Code block 2.
+  // Calculate sum of even numbers.
+  for ($i = 2; $i <= 50; $i += 2) {
+    $sum_even += $i;
+  }
+  
+  // Code block 3.
+  // Calculate sum of odd numbers.
+  for ($i = 1; $i <= 50; $i += 2) {
+    $sum_odd += $i;
+  }
+  
+  $result = $sum_even * $sum_odd;
+  ```
+  Code blocks 1, 2 and 3 separated by blank spaces and with descriptive comments.
+  
+  This is just an example, in real world scenarios code blocks can be longer and doing complex things.
+
 
 **Common Practices**
 --------------------
