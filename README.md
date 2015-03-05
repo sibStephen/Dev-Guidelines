@@ -47,3 +47,5 @@ Common Guidelines
 * Use `/* ... */` for multi-line comments and `//` for single line comments.
 
 * Configure your editor according to these standards.
+
+* If you have long arrays, try to use multiline arrays.
